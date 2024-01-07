@@ -1,13 +1,115 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/* # Front-end Style Guide
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+## Layout
+
+The designs were created to the following widths:
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Figtree](https://fonts.google.com/specimen/Figtree)
+- Weights: 600, 800 */
+
+  @import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&family=Open+Sans&display=swap');
+
+
+/* Mobile 375px */
+:root{
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
 }
+body, h1, p, ul {
+    margin: 0;
+    padding: 0;
+  }
+  p{
+    font-size: 16px;
+  }
+  
+  body {
+    font-family: 'Figtree', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: var(--Yellow);
+  }
+
+  .App{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .roundedDiv{
+    /* display: flex; */
+    /* justify-content: center; */
+    width:80%;
+    max-width: 375px;
+    background-color: var(--White);
+    /* margin:15px; */
+    padding:4%;
+    border: 1px solid #000;
+    border-radius: 5%;
+    box-shadow: 10px 10px 2px black;
+          }
+
+    .articleImg{
+        display: flex;
+    }
+    .articleImg >img{
+        width:100%;
+        border-radius: 5%;
+    }
+
+    .learning {
+        width:100px;
+        color:var(--Black);
+        padding:5px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        background-color: var(--Yellow);
+        text-align: center;
+        font-weight: 800;
+        border-radius: 5%;
+    }
+    .interactiveElement{
+        font-size: 22px;
+        font-weight: 800;
+    }
+    .interactiveElement:hover{
+        color: var(--Yellow);
+        cursor: pointer;
+    }
+
+    .description{
+        color: var(--Grey)
+    }
+
+    .authorInfo{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .authorName{
+        padding-left:10px;
+        font-weight: 800;
+    }
+
+
+
+
+/* Desktop: 1440px */
+  /* @media screen and (min-width: 1340px) {
+    .roundedDiv{
+        padding:2%;
+            }
+
+  } */
+  
+
